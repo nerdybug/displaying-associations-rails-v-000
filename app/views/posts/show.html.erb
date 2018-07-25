@@ -1,5 +1,5 @@
 <h1><%= @post.title %></h1>
 
-<%= link_to post_path(@post), @post.title %>
+<%= link_to @post.category.name, category_path(@post.category) if @post.category %>
 
 <p><%= @post.description %></p>
